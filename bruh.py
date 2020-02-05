@@ -28,8 +28,8 @@ async def on_message(message):
         if text.lower().strip() == ("bruhmoment"):
             await message.channel.send(message.content)
             print('bruhmoment has been used.')
-
-        if message.content.startswith('bruh-help'):
+            
+        if message.content == "bruh-help":
             print('bruh-help has been used.')
             embed = discord.Embed(title="BruhBotGZ - Help", description="When you say Bruh the bot bruh's back, same with Bruh Moment. :)", color=0x444444)
             embed.set_author(name="BruhBotGZ", icon_url='https://bruhbot.letsgz.net/LetsGZ/LetsGZ.png')
@@ -39,7 +39,7 @@ async def on_message(message):
             embed.set_footer(text="Thank you for using this bot! <3")
             await message.channel.send(embed=embed)
 
-        if message.content.startswith('bruh-info'):
+        if message.content == "bruh-info":
             print('bruh-info has been used.')
             embed = discord.Embed(title="BruhBotGZ", description="This bot was made by LetsGZ (https://letsgz.net)", color=0x444444, url="https://bruhbot.letsgz.net")
             embed.set_author(name="BruhBotGZ", icon_url='https://bruhbot.letsgz.net/LetsGZ/LetsGZ.png')
