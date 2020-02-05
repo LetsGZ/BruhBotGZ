@@ -24,8 +24,11 @@ async def on_message(message):
         blacklist = ["bot"] # Bot does not react to messages that use a blacklist word with bruh
         
         words = message.content.split(" ")
-
-        if len(words) == 1:
+		
+        if text.lower().strip() == ("bruh"):
+            await message.channel.send(message.content)
+            print('bruh has been used.')
+        elif len(words) == 1:
             if "bruh" == text:
                 await message.channel.send(message.content)
         elif len(words) < 3:
