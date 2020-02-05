@@ -37,7 +37,8 @@ async def on_message(message):
                     print("Word was in blacklist")
                 else:
                     print("Sent a bruh")
-                    await message.channel.send(message.content)
+		    text = message.content.replace("@", "`@`")
+                    await message.channel.send(text)
                     
         if message.content == "bruh-help":
             print('bruh-help has been used.')
