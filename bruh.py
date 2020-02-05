@@ -26,7 +26,7 @@ async def on_message(message):
         words = message.content.split(" ")
 
         if len(words) == 1:
-            if "bruh" == message.content:
+            if "bruh" == text:
                 await message.channel.send(message.content)
         elif len(words) < 3:
             if "bruh" == words[0].lower() or "bruh" == words[1].lower():
