@@ -21,14 +21,11 @@ async def on_message(message):
     if message.author.bot == False:
         text = message.content.replace(" ", "")
 
-        if text.lower().strip() == ("bruh"):
-            await message.channel.send(message.content)
-            print('bruh has been used.')
-
-        if text.lower().strip() == ("bruhmoment"):
-            await message.channel.send(message.content)
-            print('bruhmoment has been used.')
-            
+        words = message.content.split(" ")
+        if len(words) < 3:
+            if "bruh" == words[0].lower() or "bruh" == words[1].lower():
+                await message.channel.send(message.content)
+                    
         if message.content == "bruh-help":
             print('bruh-help has been used.')
             embed = discord.Embed(title="BruhBotGZ - Help", description="When you say Bruh the bot bruh's back, same with Bruh Moment. :)", color=0x444444)
