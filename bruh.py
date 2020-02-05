@@ -36,4 +36,4 @@ async def on_message(message):
 
 '''///---///'''            
 
-client.run("NjQ2NzY2Njk5OTk0OTM5NDAx.XjncqQ.JSjUO6wLBPsR35f3iZvjArCBPc4")
+client.run("YOUR TOKEN")
