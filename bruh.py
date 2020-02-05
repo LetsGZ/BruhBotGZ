@@ -52,6 +52,7 @@ async def on_message(message):
             embed.set_author(name="BruhBotGZ", icon_url='https://bruhbot.letsgz.net/LetsGZ/LetsGZ.png')
             embed.add_field(name="Big thanks to Dounut", value="http://dounut.tech", inline=False)
             embed.add_field(name="BruhBotGZ invite link", value="https://bruhbot.letsgz.net", inline=False)
+            embed.add_field(name="BruhBotGZ source code", value="https://github.com/LetsGZ/BruhBotGZ", inline=False)
             embed.set_thumbnail(url='https://bruhbot.letsgz.net/LetsGZ/LetsGZ.png')
             embed.set_footer(text="Thank you for using this bot! <3")
             await message.channel.send(embed=embed)
