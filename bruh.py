@@ -24,7 +24,7 @@ async def on_message(message):
         blacklist = ["bot"] # Bot does not react to messages that use a blacklist word with bruh
         
         words = message.content.split(" ")
-		
+        
         if text.lower().strip() == ("bruh"):
             await message.channel.send(message.content)
             print('bruh has been used.')
@@ -36,9 +36,9 @@ async def on_message(message):
                 if words[0].lower() in blacklist or words[1].lower() in blacklist:
                     print("Word was in blacklist")
                 else:
-                    print("Sent a bruh")
-		    text = message.content.replace("@", "`@`")
+                    text = message.content.replace("@", "`@`")
                     await message.channel.send(text)
+                    print("Sent a bruh")
                     
         if message.content == "bruh-help":
             print('bruh-help has been used.')
